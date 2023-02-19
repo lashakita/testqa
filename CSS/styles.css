@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+}
+
+.logo_container {
+    margin: 20px;
+}
+
+.logo_container img {
+    width: 170px;
+    height: 170px;
+}
+
+nav {
+    font-size: 15rem;
+
+}
+#nav-items {
+    padding-right: 40px;
+}
+
+.nav-item {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.portada img {
+    width: 100%;
+    position: relative;
+}
+
+.p_container {
+    position: absolute;
+    margin: 0px;
+    top: 80%;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+}
+
+.hline_container {
+    border: solid #000;
+    border: 1px;
+    margin-top: 18px;
+
+}
+
+.hline {
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, #3498db, #10d7af, #3498db);
+}
+
+.hline hr :after {
+    content: '§';
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg);
+    transform-origin: 50% 50%;
+    padding: 1rem;
+}
+
+.frames {
+    margin-top: 20px;
+}
+
+    /*FOOTER*/
+
+.footer {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.red-social {
+    font-size: 10rem;
+    color: white;
+}
+
+.red-social i {
+    width: 44px;
+    height: 42px;
+    border: 0px;
+}
+
+.copy {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.copyright {
+    font-size: 1.3rem;
+    margin-right: 1.5rem;
+    
+
+}
+
+
+    /*DISCOGRAPHY*/
+
+#albums {
+    width: 90%;
+    margin: 100px auto;	 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.col-lg-3{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+
+}
+.col-lg-3 img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+}
+.col-lg-3:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.col-lg-3 p {
+font-size: 2rem;
+text-align: center;
+}
+
+
+
+    /*GALLERY*/
+
+#galeria .col-lg-4 {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 2s;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 25px 0px 25px;
+    border-bottom: 2px;
+
+}
+
+#galeria img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+#galeria img:hover {
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+    /*MERCH*/
+
+.contenedor_merch {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 80px 0px;
+}
+
+.contenedor_merch img {
+    width: 100%;
+} 
+    
+
+
+
+    /*MOBILE*/
+    
+@media only screen and (max-width: 576px) {
+    .logo_container img {
+        width: 80px;
+        height: 80px;
+    }
+
+    nav {
+        font-size: 10rem;
+    }
+
+    #nav-items {
+        padding-right: 0px;
+    }
+
+    .logo_container {
+        margin: 5px;
+    }
+
+    .portada img {
+        border: 10px solid #000;
+    }
+
+    .p_container {
+        margin-top: 10px;
+        position: relative;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .p_container p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .frames {
+        margin: 0px;
+        border: 10px solid #000;
+    }
+
+
+
+    /* FOOTER */
+
+    .footer {
+        background-color: black;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .red-social {
+        font-size: 10rem;
+        margin: 0px 90px;
+        color: aliceblue;
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 0px;
+    }
+
+    .copyright {
+        margin-right: 0px;
+    }
+
+
+    /*DISCOGRAPHY*/
+
+#albums {
+    margin-bottom: 0px;
+}
+
+
+
+    /*MERCH*/
+
+.contenedor_merch {
+        margin: 25px 25px 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        } 
+
+}
+
