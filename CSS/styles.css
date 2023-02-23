@@ -13,15 +13,21 @@ body {
     background-color: black;
 }
 
+
+button span {
+    font-size: 2rem;
+}
+
 header {
     text-align: center;
 }
 
-.logo_container {
-    margin: 20px;
+.logo_contenedor {
+    display: flex;
+    justify-content: center;
 }
 
-.logo_container img {
+.logo_contenedor img {
     width: 170px;
     height: 170px;
 }
@@ -84,7 +90,6 @@ nav {
 
 .footer {
     background-color: black;
-    display: inline-block;
     width: 100%;
     text-align: center;
 }
@@ -92,12 +97,6 @@ nav {
 .red-social {
     font-size: 10rem;
     color: white;
-}
-
-.red-social i {
-    width: 44px;
-    height: 42px;
-    border: 0px;
 }
 
 .copy {
@@ -109,9 +108,8 @@ nav {
 .copyright {
     font-size: 1.3rem;
     margin-right: 1.5rem;
-    
-
 }
+
 
 
     /*DISCOGRAPHY*/
@@ -186,7 +184,20 @@ text-align: center;
     width: 100%;
 } 
     
+/*CONTACT*/
 
+#contacto_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.info_contenedor h1 {
+    color: grey;
+    text-align: center;
+
+}
 
 
     /*MOBILE*/
@@ -205,8 +216,13 @@ text-align: center;
         padding-right: 0px;
     }
 
-    .logo_container {
+    .logo_contenedor {
         margin: 5px;
+    }
+
+    .logo_contenedor img {
+        width: 100px;
+        height: 100px;
     }
 
     .portada img {
@@ -234,13 +250,6 @@ text-align: center;
 
     /* FOOTER */
 
-    .footer {
-        background-color: black;
-        display: inline-block;
-        width: 100%;
-        text-align: center;
-        font-size: 50px;
-    }
 
     .red-social {
         font-size: 10rem;
@@ -250,7 +259,6 @@ text-align: center;
 
     .copy {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         margin-right: 0px;
     }
